@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import CameraPanel from './most_component/CameraPanel'
-CameraPanel
+import TopeCard from './pages/TopeCard'
+import rest from './pages/images_meir/IMG_18.jpg'
+import SingleRestaurant from './pages/SingleRestaurant'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div>
+    <div style={{border:'1px, solid black'}}>
       <CameraPanel/>
+      <SingleRestaurant/>
     </div>
   )
 }
