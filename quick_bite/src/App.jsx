@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import HomePage from './components-chaim/HomePage'
+import MenuTopping from './components-chaim/MenuTopping'
+import AddOnList from './components-chaim/MenuTopping'
 
 
 function App() {
@@ -10,7 +12,9 @@ function App() {
 
   return (
     <>
-    <HomePage/>
+    {/* <HomePage/> */}
+    <MenuTopping/>
+    {/* <AddOnList/> */}
 
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
