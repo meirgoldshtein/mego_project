@@ -4,7 +4,7 @@
 }
 
 #container1 {
-    background-color: rgb(151, 151, 151);
+    background-color: #bddaf17f;
     direction: rtl;
     /* padding: 15px; */
     box-sizing: border-box;
@@ -76,6 +76,15 @@ textarea#special-instructions:hover{
 }
 
 
+#totalMenu img:hover {
+  background-color: #bddaf100;
+  cursor: pointer;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+   /* Increase box shadow on hover */
+}
+
+
   .checkout-btn {
     background-color: #2196f3;
     border: none;
@@ -105,3 +114,41 @@ textarea#special-instructions:hover{
     background-color: #00447b;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
   }
+
+
+
+
+
+  
+
+  .add-btn {
+    background-color: #c2dcf0;
+    border: none;
+    color: black;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add box shadow */
+    width: 270px;
+    margin-top: 30px;
+    margin-right: 29px;
+  }
+  
+  .checkout-btn:before {
+    /* content: "\f07a"; */ /* Unicode for the shopping cart icon */
+    font-family: "Font Awesome 5 Free"; /* Use the Font Awesome font */
+    font-weight: 900; /* Use the solid style */
+    margin-right: 8px; /* Add some spacing between the icon and text */
+  }
+  
+  .add-btn:hover {
+    background-color: #c2dcf0;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Increase box shadow on hover */
+  }
+
+

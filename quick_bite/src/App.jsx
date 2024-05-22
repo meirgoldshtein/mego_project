@@ -5,39 +5,30 @@ import './App.css'
 import HomePage from './components-chaim/HomePage'
 import MenuTopping from './components-chaim/MenuTopping'
 import AddOnList from './components-chaim/MenuTopping'
+import YourOrders from './components-chaim/YourOrders'
+import UserSignUp from './components-chaim/UserSignUp'
+// import FireStore from './components-chaim/FireStore'
+import DataBase from './components-chaim/DataBase'
+import Routerv from './components-chaim/Router'
+import AppRouter from './components-chaim/Router'
+
+
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    {/* <HomePage/> */}
+    {/* <FireStore/> */}
+    {/* <DataBase/>
+    <YourOrders/>
+    <UserSignUp/>
+    <HomePage/>
     <MenuTopping/>
-    {/* <AddOnList/> */}
+    <AddOnList/> */}
+    <AppRouter/>
 
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  ) */}
   </>
   )
 }
