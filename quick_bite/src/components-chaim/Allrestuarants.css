@@ -1,0 +1,14 @@
+#containerAllResturants{
+    background-color: rgba(0, 0, 255, 0.221);
+    width: 360px;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    direction: ltr;
+}
+#card-50{
+    width: 50%;
+    height: 180px;
+    background-color: bisque;
+    border-radius: 10px;
+}

@@ -11,15 +11,22 @@ import UserSignUp from './components-chaim/UserSignUp'
 import DataBase from './components-chaim/DataBase'
 import Routerv from './components-chaim/Router'
 import AppRouter from './components-chaim/Router'
-
-
+// import React,{useState, useEffect}  from 'react'
+// import db from './components-chaim/firebase-config.js'
+// import DataBase from './components-chaim/DataBase'
+import { db } from './components-chaim/firebase-config.js'
+import { collection, getDocs } from "firebase/firestore";
+import AllRestaurants from './components-chaim/Allresturants.jsx'
 
 
 
 function App() {
 
+
   return (
     <>
+    <AllRestaurants/>
+    {/* <button onClick={omer}>aaa</button> */}
     {/* <FireStore/> */}
     {/* <DataBase/>
     <YourOrders/>
@@ -27,7 +34,7 @@ function App() {
     <HomePage/>
     <MenuTopping/>
     <AddOnList/> */}
-    <AppRouter/>
+    {/* <AppRouter/> */}
 
   </>
   )

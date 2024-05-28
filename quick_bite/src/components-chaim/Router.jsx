@@ -13,6 +13,10 @@ import YourOrders from './YourOrders'
 import UserSignUp from './UserSignUp'
 import SignUp from "./SignUp";
 import OrderEnd from "./OrderEnd";
+import Signin from "./Signin";
+import SignInGoogle from "./SignInGoogle";
+import Footer from "./Footer";
+import SingleRestaurant from './components-meir/SingleRestaurant'
 
 export default function AppRouter() {
   return (
@@ -24,7 +28,10 @@ export default function AppRouter() {
               <Link to="/">Home page</Link>
             </li>
             <li>
-              <Link to="/SignUp">UserSignUp</Link>
+              <Link to="/UserSignUp">UserSignUp</Link>
+            </li>
+            <li>
+              <Link to="/Signin">SignIn</Link>
             </li>
             <li>
               <Link to="/Menu_topping">Menu topping</Link>
@@ -38,6 +45,12 @@ export default function AppRouter() {
             <li>
               <Link to="/OrderEnd">OrderEnd</Link>
             </li>
+            <li>
+              <Link to="/SignInGoogle">SignInGoogle</Link>
+            </li>
+            <li>
+              <Link to="/SingleRestaurant">SingleRestaurant</Link>
+            </li>
           </ul>
         </nav>
 
@@ -47,8 +60,11 @@ export default function AppRouter() {
           <Route path="/Your_orderd">
             <YourOrders />
           </Route>
-          <Route path="/SignUp">
-            <SignUp />
+          <Route path="/UserSignUp">
+            <UserSignUp />
+          </Route>
+          <Route path="/Signin">
+            <Signin />
           </Route>
           <Route path="/Menu_topping">
             <MenuTopping />
@@ -59,11 +75,21 @@ export default function AppRouter() {
           <Route path="/OrderEnd">
             <OrderEnd/>
           </Route>
+          <Route path="/SignInGoogle">
+            <SignInGoogle/>
+          </Route>
+          <Route path="/SingleRestaurant">
+            <SingleRestaurant/>
+          </Route>
           <Route path="/">
             <HomePage />
           </Route>
         </Switch>
       </div>
+      
+      {/* <div id='footer_home'>
+                <Footer/>
+            </div> */}
     </Router>
   );
 }
