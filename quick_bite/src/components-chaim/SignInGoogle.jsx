@@ -16,6 +16,7 @@ signInWithPopup(Auth, provider)
     const token = credential.accessToken;
     // The signed-in user info.
     const user = result.user;
+    console.log(Auth.currentUser);
     // IdP data available using getAdditionalUserInfo(result)
     // ...
   }).catch((error) => {
@@ -28,10 +29,12 @@ signInWithPopup(Auth, provider)
     const credential = GoogleAuthProvider.credentialFromError(error);
     // ...
   });
+  console.log(Auth.currentUser);
+
   return (
 
-    <div>
-
+    <div className='bg-slate-400 flex w-60 h-60 place-content-center'>
+      <button onClick={SignInGoogle}> click</button>
     </div>
   )
 }

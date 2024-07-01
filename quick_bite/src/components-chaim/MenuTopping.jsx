@@ -12,11 +12,8 @@ import picture1 from "./pic/pic_eate_2.jpg"
 import picture2 from "./pic/Frame 1287.png"
 import group10 from "./pic/Group 10.png"
 import group9 from "./pic/Group 9.png"
-import './MenuTopping.css'
+// import './MenuTopping.css'
 import Footer from './Footer.jsx'
-
-
-
 import React, { useState } from 'react';
 
 const AddOnList = () => {
@@ -63,57 +60,75 @@ const AddOnList = () => {
         //         </ul>
         //     </div>
         <>
-            <div id="container1">
+            <div id="container1 " className="w-[360] bg-[#bddaf17f]">
                 <img src={picture2} id="image" style={{ width: 360 }} alt="" />
-                <div id="textSection">
+                <div id="textSection " className="p-4">
                     <h3>עוגיית לחמניה</h3>
-                    <h4>לחמניה קצרה, עוגיות שוקולד צ'יפס.</h4>
-                    <h4> וכן שוקולד קטן לטעימות.</h4>
-                    <ul style={{marginTop:45}}>
-                        <li>
-                            <input type="radio" id="chocolate-chip" name="flavor" value="chocolate-chip" />
-                            <label for="chocolate-chip">שוקולד צ'יפס</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="cookies-and-cream" name="flavor" value="cookies-and-cream" />
-                            <label for="cookies-and-cream">עוגיות עם קרם</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="peanut-butter" name="flavor" value="peanut-butter" checked />
-                            <label for="peanut-butter">חמאת בוטנים</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="funfetti" name="flavor" value="funfetti" />
-                            <label for="funfetti">יוגורט רגיל</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="red-velvet" name="flavor" value="red-velvet" />
-                            <label for="red-velvet">קטיפה אדומה</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="snicker-doodle" name="flavor" value="snicker-doodle" />
-                            <label for="snicker-doodle">יוגורט תות</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="white-chocolate" name="flavor" value="white-chocolate" checked />
-                            <label for="white-chocolate">שוקולד לבן</label>
-                        </li>
-                        <li>
-                            <input type="radio" id="macadamia" name="flavor" value="macadamia" />
-                            <label for="macadamia">מקדמיה</label>
-                        </li>
+                    <p>לחמניה קצרה, עוגיות שוקולד צ'יפס.</p>
+                    <p> וכן שוקולד קטן לטעימות.</p>
+                    <ul  className='pr-10' style={{ marginTop: 45 }}>
+
+                        <fieldset>
+                            <li>
+                                <input id="published" class="peer/published" type="radio" name="status" />
+                                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+                            </li>
+                            <li>
+                                <input id="published" class="peer/published" type="radio" name="status" />
+                                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+                            </li>
+                            <li>
+                                <input id="published" class="peer/published" type="radio" name="status" />
+                                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+                            </li>
+                            <li>
+                                <input id="published" class="peer/published" type="radio" name="status" />
+                                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+                            </li>
+                            <li>
+                                <input id="published" class="peer/published" type="radio" name="status" />
+                                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+                            </li>
+                            <li>
+                                <input id="published" class="peer/published" type="radio" name="status" />
+                                <label for="published" class="peer-checked/published:text-sky-500">Published</label>
+
+                            </li>
+                        </fieldset>
+
+
                     </ul>
-                    <div id="specialInsructions" style={{marginTop:69}}>
-                    {/* <h3 style={{ paddingTop: 46 }}>הוסף הוראות מיוחדות:</h3> */}
-                    <label for="special-instructions">הוראות מיוחדות:</label>
-                    <textarea id="special-instructions" name="special-instructions" rows="3" placeholder="הזן כאן את ההוראות המיוחדות שלך"></textarea>
+                    {/* <div id="specialInsructions" style={{ marginTop: 69 }}>
+                        <label for="special-instructions">הוראות מיוחדות:</label>
+                        <textarea id="special-instructions" name="special-instructions" rows="3" placeholder="הזן כאן את ההוראות המיוחדות שלך"></textarea>
+                    </div> */}
+                    <div class="m-4">
+                        <label class="block text-gray-700 font-bold mb-2" for="special-instructions">
+                            הוראות מיוחדות:
+                        </label>
+                        <textarea
+                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                            id="special-instructions"
+                            name="special-instructions"
+                            rows="3"
+                            placeholder="הזן כאן את ההוראות המיוחדות שלך"
+                        ></textarea>
                     </div>
-                    <div id="totalMenu">
-                        <img src={group10} alt="" />
-                        <h3 style={{fontWeight: 500}}>3</h3>
-                        <img src={group9} alt="" />
+                    <div id="totalMenu " className="flex flex-row place-content-around">
+                        <img  className=' rounded-full shadow-xl hover:bg-black ' src={group10} alt="" />
+                        <h3 style={{ fontWeight: 500 }}>3</h3>
+                        <img  className=' rounded-full shadow-xl hover:bg-black ' src={group9} alt="" />
                     </div>
-                    <button class="checkout-btn">Checkout</button>
+                    <div className="flex place-content-center" >
+                    <button id="checkout-btn" className="bg-[#2196f3] w-[270px] h-10 shadow-[0_4px_8px_0_rgba(0,0,0,0.2)] appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mt-10 mb-8  hover:shadow-[0px_8px_16px_0px_rgba(0,0,0,0.2)] hover:text-white hover:bg-blue-700 transition-colors hover:transition-shadow duration-500 ease ">Checkout</button>
+                    </div>
+                    {/* <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button> */}
+
                 </div>
             </div>
 

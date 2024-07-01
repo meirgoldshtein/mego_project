@@ -7,7 +7,7 @@ import FoodComponent from './FoodComponent'
 // import { useEffect, useState } from 'react'
 
 
-export default function SingleRestaurant() {
+export default function SingleRestaurant(props) {
     return (
         <div style={{display:'flex',flexDirection:'column', alignItems:'center'}}>
 

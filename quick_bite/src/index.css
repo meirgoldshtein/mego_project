@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -64,5 +64,32 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+} */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  /* .pay-btn {
+    @apply hover:animate-pulse w-[300px] shadow-lg cursor-pointer rounded-md text-base bg-slate-400 border-none text-black text-center inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 110px;
+    margin-right: 9px;
+  } */
+}
+
+
+@layer components{
+  :root{
+    @apply font-serif leading-normal font-normal dark:bg-slate-900  ;
+  }
+  body{
+    @apply place-content-center m-0 flex min-h-24 min-w-80;
   }
 }
